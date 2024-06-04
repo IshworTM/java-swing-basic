@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class CheckboxTest implements ItemListener {
+public class CheckBoxTest implements ItemListener {
 
     @Override
     public void itemStateChanged(ItemEvent e) {
@@ -22,7 +22,7 @@ public class CheckboxTest implements ItemListener {
         JCheckBox checkBox = new JCheckBox("Not Selected :(", false);
 
         checkBox.setFont(new Font("MV Boli", Font.BOLD, 30));
-        checkBox.addItemListener(new CheckboxTest());
+        checkBox.addItemListener(new CheckBoxTest());
         panel.add(checkBox);
         
         frame.add(panel);
